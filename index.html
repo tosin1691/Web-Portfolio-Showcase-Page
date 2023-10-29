@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
     <title>Tosin Orekoya Web Portfolio</title>
 </head>
 <body>
     <header>
         <nav>
-            <h1>Tosin Orekoya</h1>
+            <h1>T.O Portfolio</h1>
             <ul>
                 <li>
                     <a href="#aboutMe">About Me</a>
                 </li>
                 <li>
-                    <a href="#portfolioGrid">Portfolio</a>
+                    <a href="#Portfolio">Portfolio</a>
                 </li>
                 <li>
                     <a href="#contactMe">Contact Me</a>
@@ -23,48 +26,54 @@
             </ul>
         </nav>
     </header>
-    <div>
-        <h2>Frontend Web Developer, London Area </h2>
+    <div class="hero">
+        <h2 class="cover-text">Tosin Orekoya</h2>
+        <h3 class="cover-text">Frontend Web Developer</h3>
     </div>
     <main>
         <article id="aboutMe">
-            <h3>About Me</h3>
-            <img src="./assets/images/Tosin23.jpeg" alt="a close up shot of the portfolio owner, Tosin" width="10%">
-            <p>I am a personable, engaging and experienced chatered accountant currently undergoing a career transition to the digital space. My interest for web development stems from my passion for problem solving. The feeling of a great sense of success after solving a complex problem is indescribable and I look forward to working in a field that greatly links with my passion. I am currently studying in a Frontend Web Development bootcamp certificate program at edX Online, where I am continuing to build my skills in HTML & CSS, JavaScript, React.js, and responsive web design. I thoroughly enjoy collaborating with my peers to bring our software visions to life.</p>
+            <h2>About Me</h2>
+            <div id="bio">
+                <img id="avatar" src="./assets/images/Tosin23.jpeg" alt="a close up shot of the portfolio owner, Tosin">
+                <p>I am a personable, engaging and experienced chatered accountant currently undergoing a career transition to the digital space. My interest for web development stems from my passion for problem solving. The feeling of a great sense of success after solving a complex problem is indescribable and I look forward to working in a field that greatly links with my passion. I am currently studying in a Frontend Web Development bootcamp certificate program at edX Online, where I am continuing to build my skills in HTML & CSS, JavaScript, React.js, and responsive web design. I thoroughly enjoy collaborating with my peers to bring our software visions to life.</p>
+            </div>
         </article>
         <div>
-            <h3>Portfolio</h3>
+            <h2 class="subHeading" id="Portfolio">Portfolio</h2>
         </div>
         <section id="portfolioGrid">
             <div id="tracker" class="portfolioGridArea">
-                <div class="siteName">Attendance Tracker</div>
+                <a href="https://tosin1691.github.io/Church-att-tracker-app/" target="_blank" class="siteName">Attendance Tracker</a>
             </div>
             <div id="scorecard" class="portfolioGridArea">
-                <div class="siteName">Basketball Scorecard</div>
+                <a href="https://tosin1691.github.io/Basketball-scoreboard/" target="_blank" class="siteName">Basketball Scorecard</a>
             </div>
             <div id="blackjack" class="portfolioGridArea">
-                <div class="siteName">Blackjack Game</div>
+                <a href="https://tosin1691.github.io/Blackjack-Game/" target="_blank" class="siteName">Blackjack Game</a>
             </div>
             <div id="passwordGen" class="portfolioGridArea">
-                <div class="siteName">Password Generator</div>
+                <a href="https://tosin1691.github.io/gen-password-app-efficient/" target="_blank" class="siteName">Password Generator</a>
             </div>
             <div id="hometownSite" class="portfolioGridArea">
-                <div class="siteName">Hometown Site</div>
+                <a href="https://tosin1691.github.io/Hometown-site-TO/" target="_blank" class="siteName">Hometown Site</a>
             </div>
         </section>
 
-        <div id="contactMe">
-            <h3>Contact Me</h3>
-        </div>
-        <section>
-            <a href="mailto:olaseni.orekoya@yahoo.co.uk" target="_blank">olaseni.orekoya@yahoo.co.uk</a>
+        <section id="contactMe">
+            <h3 id="contact-text">Contact Me.</h3>
+            <a href="mailto:olaseni.orekoya@yahoo.co.uk" target="_blank" id="mail">olaseni.orekoya@yahoo.co.uk</a>
             <div class="icons">
-                <a href="mailto:olaseni.orekoya@yahoo.co.uk" target="_blank"><img src="./assets/images/mail.png" alt="mail icon" width="2%"></a>
-                <a href="https://github.com/tosin1691" target="_blank"><img src="./assets/images/github.png" alt="git hub icon" width="2%"></a>
-                <a href="www.linkedin.com/in/tosin-orekoya" target="_blank"><img src="./assets/images/linkedin.png" alt="linkedin icon" width="2%"></a>
+                <a href="mailto:olaseni.orekoya@yahoo.co.uk" target="_blank"><img src="./assets/images/mail.png" alt="mail icon" width="3%"></a>
+                <a href="https://github.com/tosin1691" target="_blank"><img src="./assets/images/github.png" alt="git hub icon" width="3%"></a>
+                <a href="https://www.linkedin.com/in/tosin-orekoya/" target="_blank"><img src="./assets/images/linkedin.png" alt="Linkedin icon" width="3%"></a>
             </div>
         </section>
 
     </main>
+    <footer>
+        <p>
+            &copy; Copyright 2023 Tosin Orekoya
+        </p>
+    </footer>
 </body>
 </html>

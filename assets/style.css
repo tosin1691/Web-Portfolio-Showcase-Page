@@ -1,0 +1,192 @@
+* {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+body {
+ margin: 0;
+}
+
+
+header nav h1 {
+    font-size: 38px;  
+    padding-left: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(192,192,192, 0.1);
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    list-style-type: none;
+}
+
+header nav ul li {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+nav ul li a:hover, .siteName:hover, #mail:hover {
+    background-color: #C0BCB5;
+}
+
+.hero {
+    position: relative; 
+    height: 200px;
+    width: 100%;
+    background-image: url(./images/London-city.jpeg);
+    background-size: cover;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(192,192,192, 0.63);
+}
+
+
+.cover-text {
+    margin: 0;
+    position: relative;
+    top: 60px;
+    color: black;  
+    font-size: 25px;
+    text-align: center;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+#aboutMe h2 {
+border-bottom: 1px solid gray;
+padding-bottom: 10px;
+margin-top: 50px;
+font-size: 30px;
+}
+
+#avatar {
+    width: 30%;
+    margin-right: 35px;
+    border-radius: 10px;
+    border: 3px solid #C0BCB5;
+}
+
+article p {
+    font-size: 18px;
+    text-align: justify;
+    width: 80%;
+    }
+
+#bio {
+    display: flex;
+    align-items: center;
+}
+
+.subHeading {
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 110px;
+    margin: 50px auto;
+}
+
+#portfolioGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 250px 250px;
+    grid-template-areas: 
+    "tracker tracker"
+    "scorecard blackjack"
+    "passwordGen hometownSite"
+    ;
+}
+
+#tracker {
+    grid-area: tracker;
+    background-image: url(./images/attendance-tracker.png);
+}
+
+#scorecard {
+    grid-area: scorecard;
+    background-image: url(./images/basketball-score.jpeg);
+}
+
+#blackjack {
+    grid-area: blackjack;
+    background-image: url(./images/blackjack1.gif);
+}
+
+#passwordGen {
+    grid-area: passwordGen;
+    background-image: url(./images/Password-Generator.webp);
+}
+
+#hometownSite {
+    grid-area: hometownSite;
+    background-image: url(./images/hometown.webp);
+}
+
+.portfolioGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid #C0BCB5;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+.siteName {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: rgba(154, 186, 193, 0.75);
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#contactMe, footer {
+    text-align: center;
+}
+
+#contact-text {
+    font-size: 65px;
+    margin-bottom: 35px;
+}
+
+#mail {
+    font-size: 20px;
+}
+
+.icons {
+    margin: 10px 0 35px;
+}
+
+.icons a {
+    padding-left: 5px;
+}
+
+footer, footer p {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
