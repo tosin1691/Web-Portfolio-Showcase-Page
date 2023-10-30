@@ -1,14 +1,25 @@
+:root {
+    --lightGrayColor: #C0BCB5;
+    --darkColor: black;
+}
+
+
 * {
+    /*set font for the entire webpage*/
     font-family: 'Cormorant Garamond', serif;
 }
 
 body {
+    /*removes all margins and set background of the body of the page*/
  margin: 0;
+ background-color: rgba(241, 135, 15, 0.07);
 }
 
 
+/*The below sets CSS styling for the header section of the page including the h1 and ul elements*/
+
 header nav h1 {
-    font-size: 38px;  
+    font-size: 40px;  
     padding-left: 20px;
 }
 
@@ -31,8 +42,16 @@ header nav ul li {
 }
 
 nav ul li a:hover, .siteName:hover, #mail:hover {
-    background-color: #C0BCB5;
+    background-color: var(--lightGrayColor);
 }
+
+a {
+    text-decoration: none;
+    color: var(--darkColor);
+}
+
+
+/*The below sets CSS styling for the hero section of the page*/
 
 .hero {
     position: relative; 
@@ -53,7 +72,7 @@ nav ul li a:hover, .siteName:hover, #mail:hover {
 }
 
 .hero h2 {
-    font-size: 38px;
+    font-size: 45px;
 }
 
 .hero p {
@@ -65,22 +84,25 @@ nav ul li a:hover, .siteName:hover, #mail:hover {
     margin: 0;
     position: relative;
     top: 60px;
-    color: black;  
+    color: var(--darkColor);  
     font-size: 25px;
     text-align: center;
 }
 
+
 main {
-    width: 60%;
+    /*set the width for the "main" section and centres the main using margin*/
+    width: 65%;
     margin: 0 auto;
 }
 
+/*The below sets CSS styling for the only article element on the page*/
 
 #aboutMe h2 {
-border-bottom: 1px solid gray;
+border-bottom: 1px solid var(--lightGrayColor);
 padding-bottom: 10px;
 margin-top: 50px;
-font-size: 30px;
+font-size: 35px;
 }
 
 #avatar {
@@ -90,11 +112,11 @@ font-size: 30px;
     margin-top: 25px;
     margin-right: 35px;
     border-radius: 10px;
-    border: 3px solid #C0BCB5;
+    border: 3px solid var(--darkColor);
 }
 
 #aboutMe p {
-    font-size: 22px;
+    font-size: 20px;
     text-align: justify;
     }
 
@@ -104,12 +126,15 @@ font-size: 30px;
 }
 
 .subHeading {
-    font-size: 30px;
+    /*sets font size, slignment, border, width ad margin for the subheading, Portfolio*/
+    font-size: 35px;
     text-align: center;
-    border-bottom: 2px solid black;
-    width: 110px;
+    border-bottom: 2px solid var(--lightGrayColor);
+    width: 130px;
     margin: 50px auto;
 }
+
+/* The below sets CSS Grid and styling for the Portfolio of work*/
 
 #portfolioGrid {
     display: grid;
@@ -124,7 +149,7 @@ font-size: 30px;
 
 #tracker {
     grid-area: tracker;
-    background-image: url(./images/attendance-tracker.png);
+    background-image: url(./images/att-tracker2.jpg);
 }
 
 #scorecard {
@@ -134,24 +159,24 @@ font-size: 30px;
 
 #blackjack {
     grid-area: blackjack;
-    background-image: url(./images/blackjack1.gif);
+    background-image: url(./images/deck-cards.jpeg);
 }
 
 #passwordGen {
     grid-area: passwordGen;
-    background-image: url(./images/Password-Generator.webp);
+    background-image: url(./images/pass-gen.jpg);
 }
 
 #hometownSite {
     grid-area: hometownSite;
-    background-image: url(./images/hometown.webp);
+    background-image: url(./images/town-icon.jpeg);
 }
 
 .portfolioGridArea {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border: 3px solid #C0BCB5;
+    border: 5px solid var(--darkColor);
     margin: 5px;
     display: flex;
     align-items: center;
@@ -162,18 +187,20 @@ font-size: 30px;
     text-decoration: none;
     color: #ffffff;
     cursor: pointer;
-    background-color: rgba(154, 186, 193, 0.75);
-    padding: 15px;
-    font-size: 20px;
+    background-color: rgba(212, 132, 83, 0.75);
+    padding: 25px;
+    font-size: 30px;
     font-weight: bold;
 }
+
+/* The below sets CSS styling for the contact me section of the page*/
 
 #contactMe, footer {
     text-align: center;
 }
 
 #contact-text {
-    font-size: 65px;
+    font-size: 40px;
     margin-bottom: 35px;
 }
 
@@ -191,9 +218,11 @@ font-size: 30px;
 }
 
 footer, footer p {
+    /* sets margin bottom to 0 for the footer section of the page*/
     margin-bottom: 0;
 }
 
+/* The below sets media queries to ensure the page is responsive and is able to adapt to various screen sizes*/
 
 @media only screen and (max-width: 1200px) {
     #aboutMe p {
