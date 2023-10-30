@@ -52,6 +52,14 @@ nav ul li a:hover, .siteName:hover, #mail:hover {
     background-color: rgba(192,192,192, 0.63);
 }
 
+.hero h2 {
+    font-size: 38px;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: bold;
+}
 
 .cover-text {
     margin: 0;
@@ -63,7 +71,7 @@ nav ul li a:hover, .siteName:hover, #mail:hover {
 }
 
 main {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -76,21 +84,23 @@ font-size: 30px;
 }
 
 #avatar {
-    width: 30%;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-top: 25px;
     margin-right: 35px;
     border-radius: 10px;
     border: 3px solid #C0BCB5;
 }
 
-article p {
-    font-size: 18px;
+#aboutMe p {
+    font-size: 22px;
     text-align: justify;
-    width: 80%;
     }
 
 #bio {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .subHeading {
@@ -175,8 +185,9 @@ article p {
     margin: 10px 0 35px;
 }
 
-.icons a {
+.icons img {
     padding-left: 5px;
+    min-width: 25px;
 }
 
 footer, footer p {
@@ -184,9 +195,73 @@ footer, footer p {
 }
 
 
+@media only screen and (max-width: 1200px) {
+    #aboutMe p {
+        font-size: 18px;
+    }
 
+    main {
+        width: 70%
+    }
 
+    #avatar {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px;
+    }
+}
 
+@media only screen and (max-width: 1000px) {
+    #aboutMe p {
+        font-size: 15px;
+    }
 
+    main {
+        width: 70%
+    }
 
+    #avatar {
+        width: 100%;
+        max-width: 250px;
+        margin: 15px;
+    }
+}
 
+@media only screen and (max-width: 767px) {
+    #portfolioGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 250px 250px 250px 250px;
+        grid-template-areas: 
+        "tracker"
+        "scorecard"
+        "blackjack"
+        "passwordGen"
+        "hometownSite"
+        ;
+    }
+
+    #aboutMe p {
+        font-size: 18px;
+    }
+
+    #bio {
+        display: inline-block;
+    }
+
+    #avatar {
+        margin: 0;
+        max-width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    header nav h1 {
+        font-size: 30px;
+    }
+
+}
